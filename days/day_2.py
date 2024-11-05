@@ -1,0 +1,6 @@
+name=input("What is your name?: ")
+print("Hi",name,",","it is nice to have you here!")
+age=input("How old are you?: ")
+print("Damn!", age, "is pretty old!")
+hobby=input("Do you like working as a Cloud Engineer?: ")
+print("Of course you do :) ")
