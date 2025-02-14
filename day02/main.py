@@ -1,10 +1,12 @@
-print("Getting to Know you!")
-NAME = input("What is your name? ")
-FOOD = input("What is your favorite food? ")
-MUSIC = input("What is your favorite music? ")
-LIVE = input("Where do you live? ")
+print("Welcome to the tip calculator!")
 print()
-print("You are: " + NAME)
-print("You are probably hungry for: " + FOOD)
-print("And you are definetly getting your groove on to: " + MUSIC)
-print("living in the amazing: " + LIVE)
+bill = float(input("What was the total bill? "))
+tip = int(input("How much tip would you like to give? 10, 12, or 15? $"))
+number_of_people = int(input("How many people to split the bill "))
+
+total_bill_with_tip = tip / 100 * bill + bill
+
+total_bill = total_bill_with_tip / number_of_people
+final_amount = round(total_bill, 2)
+
+print(f"Each person should pay {final_amount}$")
